@@ -24,7 +24,7 @@ body {
     background: var(--VeryDarkBlue);
 }
 
-h3 {
+h1, h3 {
     font-size: 1.75rem;
 }
 
@@ -35,7 +35,7 @@ p {
 .card {
     width: 400px;
     height: 400px;
-    background: var(--DarkBlue);
+    background: radial-gradient(farthest-corner at 50% -55%, var(--VeryDarkBlue) 3%, var(--DarkBlue));
     border-radius: 1.5rem;
 }
 
@@ -55,7 +55,7 @@ p {
 }
 
 .rating-button {
-    background-color: var(--VeryDarkBlue);
+    background-color: var(--DarkBlue);
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
