@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: var(--White);
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --primary: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--VeryDarkBlue);
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    color: var(--LightGrey);
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    background: var(--DarkBlue);
+    border-radius: 1.5rem;
+}
+
+.card-content {
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating-button {
+    background-color: var(--VeryDarkBlue);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--LightGrey);
+}
+
+.rating-button:hover {
+    background: var(--LightGrey);
+    cursor: pointer;
+    color: var(--White);
+    opacity: 1;
+}
+
+.submit {
+    height: 3rem;
+    width: 100%;
+    background: var(--primary);
+    border-radius: 1.5rem;
+    outline: none;
+    border: none;
+    font-weight: 700;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background: var(--White);
+    color: var(--primary);
+}
+
+.thank-you-img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.results {
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    color: var(--primary);
+    background-color: var(--VeryDarkBlue);
+}
+
+.rating {
+    color: var(--primary);
+}
+
+.hide {
+    display: none;
+}
+
+.active {
+    background-color: var(--primary);
+    color: var(--White);
+}
+
+.active:hover {
+    cursor: unset;
+    background: var(--primary);
+}
+
+.center {
+    text-align: center;
+}
+
+@media screen and (max-width: 375px){
+    .card {width: 90%;}
+}

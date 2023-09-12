@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+<div class="card" id="ratingState">
+    <div class="card-content">
+
+      <button class="rating-button" value="10"><img src="images/icon-star.svg" alt=""></button>
+
+      <h3>How did we do?</h3>
+
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+    
+      <div class="button-container">
+        <button value="1" class="rating-button">1</button>
+        <button value="2" class="rating-button">2</button>
+        <button value="3" class="rating-button">3</button>
+        <button value="4" class="rating-button">4</button>
+        <button value="5" class="rating-button">5</button>
+      </div>
+      
+      <div class="button-container">
+        <button class="submit">S U B M I T</button>
+      </div>
+    </div>
+</div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div class="card hide" id="thankYouState">
+    <div class="card-content center">
+      <img src="images/illustration-thank-you.svg" alt="" class="thank-you-img">
+      <div class="results">You selected <span class="rating"></span> out of 5</div>
+
+      <h3>Thank you!</h3>
+    
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+    </div>
+  </div>
+  <!-- Thank you state end -->
+
+</body>
+
+<script src="js/app.js"></script>
+</html>
