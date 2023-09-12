@@ -15,6 +15,7 @@ ratingButtons.forEach(ratingButton => {
             }
         }
         ratingButton.classList.add("active");
-        document.querySelector(".rating").innerText = ratingButton.value;
+        if(ratingButton.value == undefined) document.querySelector(".rating").innerText = "⭐";
+        else document.querySelector(".rating").innerText = ratingButton.value;
     });
 });
